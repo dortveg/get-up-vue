@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Counter />
+  <Generator />
+  <Footer />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Counter from './components/Counter.vue';
+import Generator from './components/Generator.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: { Counter, Generator, Footer }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@font-face {
+  font-family: 'Syne';
+  src: url(./assets/SyneMono-Regular.ttf);
+}
+@font-face {
+  font-family: 'Julius';
+  src: url(./assets/JuliusSansOne-Regular.ttf);
+}
+@font-face {
+  font-family: 'Bungee';
+  src: url(./assets/Bungee-Regular.ttf);
+}
+
+html {
+  height: 100%;
+  background-color: #141313;
 }
 </style>
